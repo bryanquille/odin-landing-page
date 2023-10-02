@@ -145,22 +145,22 @@ body {
 }
 
 .image-card-1 {
-    background: url(/images/shepherd-dog.jpg) no-repeat center center;
+    background: url(../images/shepherd-dog.jpg) no-repeat center center;
     background-size: cover;
 }
 
 .image-card-2 {
-    background: url(/images/cat.jpg) no-repeat center center;
+    background: url(../images/cat.jpg) no-repeat center center;
     background-size: cover;
 }
 
 .image-card-3 {
-    background: url(/images/guinea-pig.jpg) no-repeat center center;
+    background: url(../images/guinea-pig.jpg) no-repeat center center;
     background-size: cover;
 }
 
 .image-card-4 {
-    background: url(/images/hedgehog.jpg) no-repeat center center;
+    background: url(../images/hedgehog.jpg) no-repeat center center;
     background-size: cover;
 }
 
