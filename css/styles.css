@@ -331,26 +331,6 @@ a {
     margin: 0;
 }
 
-/* Hovers */
-
-.call-to-action:hover {
-    cursor: pointer;
-    background-color: var(--color3);
-    color: var(--color1);
-}
-
-.cta-3:hover {
-    background-color: var(--color1);
-    color: var(--color3);
-    border-color: var(--color3);
-}
-
-/* .bryan-portfolio:hover {
-    background-color: var(--color3);
-    color: var(--color1);
-    border-radius: 1.5rem;
-} */
-
 /* RESPONSIVE DESIGN */
 
 @media (min-width: 768px) {
@@ -662,14 +642,32 @@ a {
     }
 }
 
+/* Hovers */
+
+.call-to-action:hover {
+    cursor: pointer;
+    background-color: var(--color3);
+    color: var(--color1);
+}
+
+.cta-3:hover {
+    background-color: var(--color1);
+    color: var(--color3);
+    border-color: var(--color3);
+}
+
 
 /* Animations */
 @keyframes blink {
     0% {
-        box-shadow: 0 0 0 0 var(--color4);
+        box-shadow: 0 0 0 0.1rem var(--color4);
     }
     
-    40% {
-        box-shadow: 0 0 5px 0.3rem var(--color4);
+    50% {
+        box-shadow: 0 0 5px 0.4rem var(--color4);
+    }
+
+    99% {
+        box-shadow: 0 0 0 0.1rem var(--color4);
     }
 }
