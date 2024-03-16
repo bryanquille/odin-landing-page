@@ -1,82 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/087dfb62b8.js" crossorigin="anonymous"></script>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Odin - Landing Page</title>
 </head>
-<body>
-    <div class="container">
 
-        <header class="header">
-            <nav class="navbar">
-                <ul class="navlist">
-                    <li class="navitem"><a href="index.html" class="nav-logo">PawPalace</a></li>
-                    <li class="navitem"><a href="#random-pets" class="nav-random-pets">Random Pets</a></li>
-                    <li class="navitem"><a href="#motivation" class="nav-motivation">Motivation</a></li>
-                    <li class="navitem"><a href="#adopt" class="nav-adopt">Adopt</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main class="main">
-            <div class="hero">
-                <div class="hero-container">
-                    <div class="left-hero">
-                        <h1 class="title-1">PawPalace Pets</h1>
-                        <p class="hero-text">Meet Our Four-Legged Friends: Your Daily Dose of Cuteness, Inspiration, and Pet Love!</p>
-                        <button class="hero-button">Sign Up</button>
+<body>
+    <header class="header">
+        <a href="/" class="company-info">
+            <img src="https://blz04pap003files.storage.live.com/y4mJl95lcM9CT6YiH36MMTUWsrX2zt6YG36831s20In9jKMVTarpKLunT8EWkaQZip79BWTbtu_Q-rM-SNDaly-IydaovB77QP6pfCpXYNR0PZEsaSXFGV-wP-vfBycKjtmYDLaSKY3lCmoQFyUVA8TY92nNCu2mZTa1iWVomrqUP9eh9Vj-jU5hCeQcWQvoiJ_sLvxNPX59Ft6iLt_Mk9C6wG4FwzC2_jmjic4TYnrsMQ?encodeFailures=1&width=310&height=310" alt="PawPalace logo" loading="lazy" class="paw-logo">
+            <p class="company-name">PawPalace</p>
+        </a>
+        <button class="open-menu" id="open-menu">
+            <i class="fa-solid fa-square-caret-left"></i>
+        </button>
+        <nav class="navbar" id="navbar">
+            <button class="close-menu" id="close-menu">
+                <i class="fa-solid fa-square-xmark"></i>
+            </button>
+            <ul class="navlist">
+                <li class="navitem">
+                    <a href="#random-pets">Random Pets</a>
+                </li>
+                <li class="navitem">
+                    <a href="#motivation">Motivation</a>
+                </li>
+                <li class="navitem">
+                    <a href="#adopt">Adopt</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="hero">
+            <div class="hero-container">
+                <div class="hero-side-1">
+                    <h1 class="title-1">PawPalace Pets</h1>
+                    <p class="hero-text">
+                        Meet Our Four-Legged Friends: Your Daily Dose of Cuteness,
+                        Inspiration, and Pet Love!
+                    </p>
+                    <button class="call-to-action cta-1">Sign Up</button>
+                </div>
+                <div class="hero-side-2">
+                    <img src="https://blz04pap003files.storage.live.com/y4m7_0f7pB0O-55iZOFREMZE7hemi4r3D3WLQBU_iLRkbsbC0Mg6rftHUuH_Zzddw1CI93l8rZ0taZhulhpqfEp9tOLaAarJyQVJL0XopjKhNAEdvqgP8bh3qECY6Dlg1wn0_nM50QVJsbtvoZScQi6YeADanM3QHDsqkKt274HLIWzyaMA0t12KrqYj43t7ohk98S1VMAEZm_l_OD6wJAYYuqGuhRPMA7lnThG2lsvTa4?encodeFailures=1&width=1213&height=809"
+                        alt="Four pets, two cats and two dogs." loading="lazy" class="hero-img" />
+                </div>
+                <button class="call-to-action cta-2">Sign Up</button>
+            </div>
+        </div>
+        <div class="random-pets" id="random-pets">
+            <div class="random-container">
+                <h2 class="random-title-2">Some Random Pets</h2>
+                <div class="cards">
+                    <div class="card">
+                        <div class="image-card-1"></div>
+                        <p class="card-text">
+                            Man's Best Friend: Loyal, Loving, and Simply Irresistible.
+                        </p>
                     </div>
-                    <div class="right-hero">
-                        <img src="images/pets.jpg" alt="Four pets, two cats and two dogs." class="hero-img">
+                    <div class="card">
+                        <div class="image-card-2"></div>
+                        <p class="card-text">
+                            Graceful and Independent: The Mystique of Cats.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="image-card-3"></div>
+                        <p class="card-text">
+                            "Pocket-Sized Cuteness: Meet Our Guinea Pig Pals!"
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="image-card-4"></div>
+                        <p class="card-text">
+                            Spiky Charm: Exploring the World of Hedgehogs.
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="random-pets" id="random-pets">
-                <div class="random-container">
-                    <h2 class="random-title-2">Some Random Pets</h2>
-                    <div class="cards">
-                        <div class="card">
-                            <div class="image-card-1"></div>
-                            <p class="card-text">Man's Best Friend: Loyal, Loving, and Simply Irresistible.</p>
-                        </div>
-                        <div class="card">
-                            <div class="image-card-2"></div>
-                            <p class="card-text">Graceful and Independent: The Mystique of Cats.</p>
-                        </div>
-                        <div class="card">
-                            <div class="image-card-3"></div>
-                            <p class="card-text">"Pocket-Sized Cuteness: Meet Our Guinea Pig Pals!"</p>
-                        </div>
-                        <div class="card">
-                            <div class="image-card-4"></div>
-                            <p class="card-text">Spiky Charm: Exploring the World of Hedgehogs.</p>
-                        </div>
-                    </div>
-                </div>
+        </div>
+        <div class="motivation" id="motivation">
+            <div class="motivation-container">
+                <blockquote class="motivation-text">
+                    <em>"Pets remind us that love knows no bounds, offering
+                        companionship, comfort, and endless joy. Embrace the pawsitive
+                        energy they bring into your life."</em>
+                </blockquote>
+                <cite class="motivation-author"><strong>-John Smith</strong></cite>
             </div>
-            <div class="motivation" id="motivation">
-                <div class="motivation-container">
-                    <p class="motivation-text"><em>"Pets remind us that love knows no bounds, offering companionship, comfort, and endless joy. Embrace the pawsitive energy they bring into your life."</em></p>
-                    <p class="motivation-author"><strong>-John Smith</strong></p>
+        </div>
+        <div class="adopt" id="adopt">
+            <div class="adopt-box">
+                <div class="adopt-text">
+                    <h3 class="adopt-title-3">Adopt a Pet!</h3>
+                    <p class="adopt-text-desc">
+                        Adopt a pet, and find your heart's forever friend.
+                    </p>
                 </div>
+                <button class="call-to-action cta-3">Sign Up</button>
             </div>
-            <div class="adopt" id="adopt">
-                <div class="adopt-box">
-                    <div class="adopt-text">
-                        <h3 class="adopt-title-3">Adopt a Pet!</h3>
-                        <p class="adopt-text-desc">Adopt a pet, and find your heart's forever friend.</p>                  
-                    </div>
-                    <button class="adopt-button">Sign Up</button>
-                </div>
-            </div>
-        </main>
-        <footer class="footer">
-            <p class="copyright">Copyright &#169; The Odin Project 2023</p>
-        </footer>
-    </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <a href="https://bryanquille.github.io/" target="_blank" class="bryan-portfolio">Go Bryan's Portfolio <i class="fa-solid fa-briefcase"></i></a>
+        <p class="copyright">No-Copyright &#169; Bryan Quille - 2024</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
 </body>
+
 </html>

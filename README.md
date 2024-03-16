@@ -1,7 +1,9 @@
-Odin - Landing Page
+# Pets - Landing Page
 
-On this webpage I've practiced all about HTML, and CSS, about box model, inline and block elements, flexbox, etc.
+As part of The Odin Project course, I've created a landing page about pets with calling to action for adopting one. On this webpage I've used all concepts I learned about HTML and CSS.
 
-Also, as part of my previous knowledge I've created an improve webpage that it is required for this level. Adding background-images, and some responsive elements.
+Also, as part of my previous knowledge I've created an improve webpage that it is required for this level. Implementing web responsive design, some interactivity with JavaScript (the menu mobile), and a clear and good programming code.
 
-You can check this practice exercise on bryanquille.github.io/odin-landing-page
+Furthermore, some og the images are upload on a cloud and get them by https protocol.
+
+You can check this practice exercise on [Link](https://bryanquille.github.io/odin-landing-page/ "Pets - Landing Page").
